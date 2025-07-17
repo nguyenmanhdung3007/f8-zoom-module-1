@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <%- include("./partials/head.ejs") %>
+  </head>
+  <body>
+    <div class="header"><%- include("./partials/header.ejs") %></div>
+    <main class="wrapper-payment">
+      <form action="" class="payment-form d-flex flex-col">
+        <h3 class="form-title">ONLINE PAYMENT</h3>
+        <section class="form-section">
+          <h7 class="section-title">Thông tin vận chuyển và thanh toán</h7>
+          <div class="input-group-name d-flex flex-row row">
+            <div class="col-3">
+              <label for="name"><span class="paragraph-1">Tên</span></label>
+            </div>
+            <div class="col-9">
+              <input type="text" id="name" />
+            </div>
+          </div>
+          <div class="input-group-email d-flex flex-row row">
+            <div class="col-3">
+              <label for="email"><span class="paragraph-1">E-mail</span></label>
+            </div>
+            <div class="col-9">
+              <input type="email" id="email" />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h7 class="section-title">Thông tin thanh toán</h7>
+          <div class="input-group-number d-flex flex-col">
+            <label for="card-number">Số thẻ</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="Card number"
+              class=""
+            />
+            <span class="img-section"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+              >
+                <path
+                  d="M16.2777 3.99121C16.9549 3.99121 17.6044 4.26022 18.0832 4.73907C18.562 5.21791 18.8311 5.86736 18.8311 6.54454V15.0557C18.8311 15.7328 18.562 16.3823 18.0832 16.8611C17.6044 17.34 16.9549 17.609 16.2777 17.609H4.36217C3.68499 17.609 3.03553 17.34 2.55669 16.8611C2.07785 16.3823 1.80884 15.7328 1.80884 15.0557V6.54454C1.80884 5.86736 2.07785 5.21791 2.55669 4.73907C3.03553 4.26022 3.68499 3.99121 4.36217 3.99121H16.2777ZM17.1288 9.09788H3.51106V15.0557C3.51109 15.2641 3.58762 15.4653 3.72615 15.6211C3.86467 15.7769 4.05556 15.8764 4.26259 15.9008L4.36217 15.9068H16.2777C16.4862 15.9067 16.6874 15.8302 16.8432 15.6917C16.999 15.5532 17.0985 15.3623 17.1229 15.1552L17.1288 15.0557V9.09788ZM14.5755 11.6512C14.7924 11.6515 15.0011 11.7345 15.1588 11.8834C15.3166 12.0324 15.4115 12.2359 15.4242 12.4524C15.4369 12.669 15.3665 12.8822 15.2272 13.0486C15.088 13.2149 14.8905 13.3219 14.6751 13.3475L14.5755 13.3534H12.0222C11.8052 13.3532 11.5966 13.2701 11.4388 13.1212C11.2811 12.9723 11.1862 12.7688 11.1735 12.5522C11.1608 12.3356 11.2312 12.1224 11.3704 11.9561C11.5097 11.7897 11.7072 11.6828 11.9226 11.6572L12.0222 11.6512H14.5755ZM16.2777 5.69343H4.36217C4.13644 5.69343 3.91996 5.7831 3.76034 5.94272C3.60073 6.10233 3.51106 6.31882 3.51106 6.54454V7.39566H17.1288V6.54454C17.1288 6.31882 17.0392 6.10233 16.8796 5.94272C16.7199 5.7831 16.5035 5.69343 16.2777 5.69343Z"
+                  fill="#868686"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="input-group-expiry d-flex flex-col">
+            <label for="expiry">Hết hạn</label>
+            <input type="text" id="expiry" placeholder="MM/YY" />
+          </div>
+          <div class="input-group-cvc d-flex flex-col">
+            <label for="cvc">Cvc</label>
+            <input type="text" id="cvc" placeholder="xxx" />
+          </div>
+        </section>
+        <button class="m-pr-btn pay-btn">Thanh toán</button>
+        <button class="m-pr-btn cancel-btn">Huỷ bỏ</button>
+      </form>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

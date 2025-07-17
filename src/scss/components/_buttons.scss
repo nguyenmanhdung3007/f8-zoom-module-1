@@ -1,0 +1,215 @@
+@use "../variables";
+@use "../mixins";
+
+$button-color: #ed5a25;
+$button-color-hover: #ed5a25;
+$button-color-active: #dc4d1a;
+$button-color-disabled: #ed5a25;
+$button-text-color: #fff;
+$button-font-family: "Manrope", sans-serif;
+
+.s-pr-btn,
+.m-pr-btn,
+.l-pr-btn {
+  font-family: $button-font-family;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  // padding: 12px 24px;
+  // cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+    box-shadow: 0px -4px 0px 0px #d5430e inset;
+  }
+
+  &:active {
+    background-color: $button-color-active;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $button-color-disabled;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.s-pr-btn {
+  height: 32px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 32px;
+}
+
+.m-pr-btn {
+  height: 48px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 48px;
+}
+
+.l-pr-btn {
+  height: 56px;
+  background-color: $button-color;
+  color: $button-text-color;
+  border-radius: 56px;
+}
+
+.outline-btn {
+  background: #fff;
+  color: $button-color;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  &:hover {
+    box-shadow: 0px 4px 4px 0px rgba(156, 156, 156, 0.25);
+  }
+
+  &:active {
+    background: #fff4f1;
+  }
+}
+
+.nav-section-2-btn {
+  background: #fff;
+  color: $button-color;
+  border: 1px solid $button-color;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 50px;
+  padding: 6px 34px;
+  box-shadow: 14px 21px 47.1px 0px #fefefe;
+
+  &:active {
+    background: $button-color;
+    color: #fff;
+  }
+  &:hover {
+    background: $button-color;
+    color: #fff;
+  }
+}
+
+.nav-section-2-mobile-btn {
+  background: #fff;
+  color: #404040;
+  // border: 1px solid $button-color;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.321px;
+  border-radius: 33.301px;
+  padding: 6px 34px;
+  box-shadow: 9.324px 13.987px 31.37px 0px #fefefe;
+
+  &:active {
+    background: $button-color;
+    color: #fff;
+  }
+  &:hover {
+    background: $button-color;
+    color: #fff;
+  }
+}
+
+.view-more {
+  margin-top: 16px;
+  padding: 10px 25px;
+  align-items: center;
+  height: 36px;
+  gap: 10px;
+
+  &:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+    circle {
+      fill: #ed5a25;
+    }
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.pagination-web {
+  width: 100%;
+  align-self: center;
+  flex-grow: 1;
+  padding: 19px 26px;
+  flex-direction: column-reverse;
+  .sidebar-card-img {
+    width: 100%;
+    display: none;
+  }
+  .pagination-list {
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+  }
+  .pagination-number,
+  .pagination-arrow {
+    color: #787777;
+    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+      background-color: #ed5a25;
+      color: #fff;
+    }
+  }
+  .pagination-number {
+    background-color: #ededed;
+
+    a {
+      font-family: "Quicksand", sans-serif;
+      font-size: 25.667px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .pagination-number:nth-child(2) {
+    background-color: #ed5a25;
+    color: #fff;
+  }
+
+  @include mixins.screen(lg) {
+    margin-top: 60px;
+    padding: 22px 26px;
+    flex-direction: column;
+    align-items: center;
+    .sidebar-card-img {
+      margin-top: 50px;
+      display: block;
+    }
+    .pagination-list {
+      gap: 16px;
+    }
+    .pagination-number,
+    .pagination-arrow {
+      width: 24px;
+      height: 24px;
+    }
+    .pagination-number {
+      a {
+        font-size: 15.504px;
+      }
+    }
+  }
+}

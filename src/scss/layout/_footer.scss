@@ -1,0 +1,124 @@
+@use "/scss/mixins";
+
+.footer {
+  margin-top: 40px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #f2f2f2;
+  .container {
+    margin-top: 61px;
+  }
+
+  .footer-top {
+    margin-bottom: 70px;
+  }
+  .footer-mid {
+    p {
+      font-family: "Inter", sans-serif;
+    }
+  }
+
+  .footer-bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #fff4f1;
+    text-align: center;
+    p {
+      color: #909090;
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  h5 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 25px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+  ul > li {
+    padding: 5px 0;
+    font-family: "Inter", sans-serif;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    a {
+      &:hover {
+        color: #ed5a25;
+      }
+    }
+  }
+
+  .payment-img {
+    flex-wrap: wrap;
+    gap: 6px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      height: 47px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2;
+      background: #fff;
+    }
+  }
+
+  .social-list {
+    li > a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .certi-img {
+    gap: 35px;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @include mixins.screen(md) {
+    .footer-top,
+    .footer-mid {
+      margin: 0;
+    }
+
+    .social-list {
+      li > a {
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    .payment-img {
+      img {
+        height: 38px;
+        padding: 8px;
+      }
+    }
+
+    .certi-img {
+      gap: 17px;
+    }
+  }
+}

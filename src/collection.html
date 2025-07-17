@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+    <%- include("./partials/head.ejs") %>
+  </head>
+  <body>
+    <%- include("./partials/header.ejs") %>
+    <div class="collection-body container d-flex flex-col">
+      <div class="collection-header-mobile d-flex flex-row">
+        <label for="open-categories">
+          <span class="bar-categories d-flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="10"
+              viewBox="0 0 12 10"
+              fill="none"
+            >
+              <path
+                d="M11.3334 1H0.666707M9.33337 5H0.666707M7.33337 9H0.666707"
+                stroke="white"
+                stroke-width="1.33333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </label>
+
+        <input
+          type="checkbox"
+          name=""
+          id="open-categories"
+          class="toggle-categories"
+          hidden
+        />
+        <div class="overlay-categories">
+          <div class="popup-categories trans-3s">
+            <div class="popup-header d-flex flex-row">
+              <h7>List Card voucher </h7>
+              <label for="open-categories">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+            </div>
+            <ul class="categories-list d-flex flex-col">
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Mobile Game Cards</span>
+                <span class="count body-regular-1">5</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Game Cards</span>
+                <span class="count body-regular-1">10</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Payment Cards</span>
+                <span class="count body-regular-1">12</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Gift Cards</span>
+                <span class="count body-regular-1">30</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Game Console</span>
+                <span class="count body-regular-1">49</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Game CD-Key</span>
+                <span class="count body-regular-1">33</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Video Streaming</span>
+                <span class="count body-regular-1">34</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Music</span>
+                <span class="count body-regular-1">56</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Shopping</span>
+                <span class="count body-regular-1">01</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Telco Prepaid Cards</span>
+                <span class="count body-regular-1">34</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Tools</span>
+                <span class="count body-regular-1">05</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Software</span>
+                <span class="count body-regular-1">6</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Social App</span>
+                <span class="count body-regular-1">9</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Freebie Codes</span>
+                <span class="count body-regular-1">10</span>
+              </li>
+              <li class="categories-item d-flex flex-row">
+                <span class="name body-regular-1">Subscript</span>
+                <span class="count body-regular-1">11</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="breadcrumb d-flex flex-row">
+          <li class="paragraph-2"><a href="">Card Voucher</a></li>
+          <li class="paragraph-2"><a href="">Mobile card</a></li>
+        </ul>
+      </div>
+      <div class="row row-cols-2">
+        <!-- sidebar-start -->
+        <div class="col-3 col-xl-4">
+          <aside class="sidebar d-flex flex-col">
+            <div class="sidebar-card">
+              <h6 class="sidebar-card-title">Danh mục sản phẩm</h6>
+              <ul class="sidebar-card-content d-flex flex-col">
+                <li>
+                  <a href="" class="body-regular-1 trans-3s"
+                    >Mobile Game Cards</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Game Cards</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Payment Cards</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Gift Cards</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Game Console</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Game CD-Key</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Video Streaming</a>
+                </li>
+                <li><a href="" class="body-regular-1 trans-3s">Music</a></li>
+                <li><a href="" class="body-regular-1 trans-3s">Shopping</a></li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s"
+                    >Telco Prepaid Cards</a
+                  >
+                </li>
+                <li><a href="" class="body-regular-1 trans-3s">Tools</a></li>
+                <li><a href="" class="body-regular-1 trans-3s">Software</a></li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Social App</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Freebie Codes</a>
+                </li>
+                <li>
+                  <a href="" class="body-regular-1 trans-3s">Subscript</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h6 class="sidebar-card-title">Khoảng giá</h6>
+              <form action="" class="filter-price d-flex flex-col">
+                <div class="range-container">
+                  <input
+                    type="range"
+                    id="vol"
+                    name="vol"
+                    min="0"
+                    max="50"
+                    class="range-price"
+                  />
+                </div>
+                <label for="vol">
+                  <span class="body-1">Price:</span>
+                  <span class="paragraph-1">500.000 - 1.000.000 </span>
+                </label>
+                <button class="s-pr-btn">Lọc</button>
+              </form>
+            </div>
+            <div class="sidebar-card">
+              <h6 class="sidebar-card-title">Đánh giá</h6>
+              <div class="checkbox">
+                <label class="container-checkbox"
+                  ><span>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                  </span>
+                  <span class="count body-regular-2">(120k)</span>
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox"
+                  ><span>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <span class="count body-regular-2">(120k)</span>
+                  </span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox"
+                  ><span>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <span class="count body-regular-2">(120k)</span>
+                  </span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox"
+                  ><span>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <span class="count body-regular-2">(120k)</span>
+                  </span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox"
+                  ><span>
+                    <i class="fa-solid fa-star main-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <i class="fa-solid fa-star checkbox-color"></i>
+                    <span class="count body-regular-2">(120k)</span>
+                  </span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h6 class="sidebar-card-title">Thương hiệu</h6>
+              <div class="checkbox">
+                <label class="container-checkbox">
+                  <span class="body-1">Apple</span>
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Google</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Microsoft</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Amazon</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">McDonald's</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Visa</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Tencent</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Louis Vuitton </span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">MasterCard</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-checkbox">
+                  <span class="body-1">Coca-Cola</span>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="sidebar-card-img">
+              <div class="voucher d-flex flex-col">
+                <img src="./assets/imgs/voucher.svg" alt="" />
+                <h3>Card voucher hot news</h3>
+                <button
+                  class="view-more outline-btn body-regular-2 d-flex trans-3s"
+                >
+                  View all
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="8.03089" cy="8" r="7.21936" fill="#FFECE5" />
+                    <path
+                      d="M4.87258 8.45181L9.9126 8.45181L7.7107 10.6537C7.53472 10.8297 7.53472 11.1185 7.7107 11.2944C7.75244 11.3363 7.80202 11.3695 7.85661 11.3921C7.91119 11.4147 7.96971 11.4264 8.0288 11.4264C8.08789 11.4264 8.14641 11.4147 8.20099 11.3921C8.25558 11.3695 8.30516 11.3363 8.3469 11.2944L11.3204 8.32096C11.3622 8.27922 11.3954 8.22964 11.418 8.17505C11.4407 8.12047 11.4523 8.06195 11.4523 8.00286C11.4523 7.94377 11.4407 7.88525 11.418 7.83067C11.3954 7.77608 11.3622 7.7265 11.3204 7.68476L8.3469 4.71128C8.30513 4.66951 8.25554 4.63637 8.20096 4.61376C8.14637 4.59116 8.08788 4.57952 8.0288 4.57952C7.96972 4.57952 7.91122 4.59116 7.85664 4.61376C7.80206 4.63637 7.75247 4.66951 7.7107 4.71128C7.66892 4.75305 7.63579 4.80265 7.61318 4.85723C7.59057 4.91181 7.57893 4.97031 7.57893 5.02939C7.57893 5.08846 7.59057 5.14696 7.61318 5.20154C7.63579 5.25612 7.66892 5.30571 7.7107 5.34749L9.9126 7.54939L4.87258 7.54939C4.62442 7.54939 4.42137 7.75244 4.42137 8.0006C4.42137 8.24877 4.62442 8.45181 4.87258 8.45181Z"
+                      fill="#ED5B1F"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- sidebar-end -->
+
+        <!-- main-start -->
+        <div class="col-9 col-xl-8 col-lg-12 d-flex flex-col">
+          <main class="collection">
+            <div class="d-flex collection-main-header">
+              <p class="paragraph-2">Showing 1-12</p>
+              <button class="filter-btn">
+                <span class="paragraph-3">Sort by latest</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+            </div>
+            <div
+              class="row g-3 g-xl-2 g-lg-1 row-cols-4 row-cols-xl-2 row-cols-lg-2"
+            >
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p6.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p1.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p2.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p3.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p4.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p5.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p7.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p8.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p9.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p5.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p2.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p3.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p4.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p5.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p7.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p8.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p9.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p5.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p6.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-wrapper col">
+                <div class="product-card d-flex flex-col trans-3s">
+                  <div class="product-image">
+                    <img src="./assets/imgs/p1.png" alt="" class="trans-3s" />
+                    <button class="favorite-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-title">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-price">120.000 ~ 134.000</p>
+                    <button class="buy-btn trans-3s">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <div class="pagination-web d-flex flex-col">
+            <ul class="pagination-list d-flex flex-row">
+              <li class="pagination-arrow d-flex">
+                <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+              </li>
+              <li class="pagination-number d-flex"><a href="">1</a></li>
+              <li class="pagination-number d-flex"><a href="">2</a></li>
+              <li class="pagination-number d-flex"><a href="">3</a></li>
+              <li class="pagination-number d-flex"><a href="">4</a></li>
+              <li class="pagination-arrow d-flex">
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </li>
+            </ul>
+            <div class="sidebar-card-img">
+              <div class="voucher d-flex flex-col">
+                <img src="./assets/imgs/voucher.svg" alt="" />
+                <h3>Card voucher hot news</h3>
+                <button
+                  class="view-more outline-btn body-regular-2 d-flex trans-3s"
+                >
+                  View all
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="8.03089" cy="8" r="7.21936" fill="#FFECE5" />
+                    <path
+                      d="M4.87258 8.45181L9.9126 8.45181L7.7107 10.6537C7.53472 10.8297 7.53472 11.1185 7.7107 11.2944C7.75244 11.3363 7.80202 11.3695 7.85661 11.3921C7.91119 11.4147 7.96971 11.4264 8.0288 11.4264C8.08789 11.4264 8.14641 11.4147 8.20099 11.3921C8.25558 11.3695 8.30516 11.3363 8.3469 11.2944L11.3204 8.32096C11.3622 8.27922 11.3954 8.22964 11.418 8.17505C11.4407 8.12047 11.4523 8.06195 11.4523 8.00286C11.4523 7.94377 11.4407 7.88525 11.418 7.83067C11.3954 7.77608 11.3622 7.7265 11.3204 7.68476L8.3469 4.71128C8.30513 4.66951 8.25554 4.63637 8.20096 4.61376C8.14637 4.59116 8.08788 4.57952 8.0288 4.57952C7.96972 4.57952 7.91122 4.59116 7.85664 4.61376C7.80206 4.63637 7.75247 4.66951 7.7107 4.71128C7.66892 4.75305 7.63579 4.80265 7.61318 4.85723C7.59057 4.91181 7.57893 4.97031 7.57893 5.02939C7.57893 5.08846 7.59057 5.14696 7.61318 5.20154C7.63579 5.25612 7.66892 5.30571 7.7107 5.34749L9.9126 7.54939L4.87258 7.54939C4.62442 7.54939 4.42137 7.75244 4.42137 8.0006C4.42137 8.24877 4.62442 8.45181 4.87258 8.45181Z"
+                      fill="#ED5B1F"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main-end -->
+      </div>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

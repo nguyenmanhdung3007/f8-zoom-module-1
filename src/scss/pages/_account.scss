@@ -1,0 +1,166 @@
+@use "../mixins";
+
+.account-header-page {
+  max-width: 1440px;
+  margin-bottom: 550px;
+  height: 228px;
+  background: #ffe7e0;
+  margin-left: auto;
+  margin-right: auto;
+  @include mixins.screen(lg) {
+    margin-bottom: 650px;
+  }
+  @include mixins.screen(md) {
+    margin-bottom: 1100px;
+  }
+}
+.account-banner {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.account-wrapper {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  .profile-card-left {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 628px;
+    align-items: center;
+    .img-group {
+      margin-top: 58px;
+      margin-bottom: 24px;
+      position: relative;
+      .account-avatar {
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
+      }
+      .camera {
+        width: 30px;
+        position: absolute;
+        top: 83%;
+        left: 75%;
+      }
+    }
+
+    h5 {
+      font-weight: 700;
+      color: #323232;
+    }
+    .account-info {
+      margin-top: 8px;
+      border-radius: 100px;
+      background: #ffdbce;
+      padding: 4px 12px;
+      font-weight: 400;
+      color: #323232;
+      font-family: "Inter", sans-serif;
+      &:hover {
+        cursor: pointer;
+        background-color: #ed5a25;
+        color: #fff;
+      }
+    }
+
+    .account-info-list {
+      width: 100%;
+      padding: 40px 35px;
+    }
+    .account-info-items {
+      padding: 16px 20px;
+      &:hover {
+        cursor: pointer;
+        border-radius: 20px;
+        background: #fff4f1;
+        box-shadow: -5px 4px 17.3px 0px rgba(248, 248, 248, 0.5);
+        svg path {
+          fill: #ed5a25;
+        }
+      }
+      &:hover .account-info-content {
+        color: #ed5a25;
+      }
+    }
+    .account-info-content {
+      font-weight: 600;
+    }
+    .account-info-items > a {
+      gap: 24px;
+      align-items: center;
+    }
+  }
+
+  .profile-card-right {
+    height: 628px;
+    padding: 47px 30px;
+    .profile-card-title {
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .profile-detail-card {
+      justify-content: space-between;
+      min-height: 167px;
+      padding: 18px 26px;
+      h7 {
+        color: #353535;
+      }
+      .group-money {
+        align-items: center;
+        gap: 12px;
+      }
+      .top-up {
+        align-self: flex-end;
+        padding: 4px 12px;
+        border-radius: 100px;
+        background: #ffdbce;
+        color: #323232;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+          background-color: #ed5a25;
+          color: #fff;
+        }
+      }
+      .row {
+        justify-content: space-between;
+        align-items: center;
+      }
+      .view-more-btn {
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+          cursor: pointer;
+          .body-regular-3,
+          i {
+            color: #ed5a25;
+          }
+        }
+        .body-regular-3 {
+          font-weight: 400;
+          color: rgba(127, 127, 127, 0.5);
+        }
+        i {
+          color: rgba(127, 127, 127, 0.5);
+          font-size: 1rem;
+        }
+      }
+      .count {
+        color: #ed5a25;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+      }
+      .status {
+        text-align: center;
+      }
+    }
+  }
+}

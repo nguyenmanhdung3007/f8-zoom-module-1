@@ -1,0 +1,108 @@
+@use "/scss/mixins";
+
+$primary-colors-1: #ed5a25;
+$secondary-colors-12: #ffdbce;
+
+$input-border: #f8f8f8;
+$input-border-focus: #ed5a25;
+$input-border-error: #de2323;
+$input-border-valid: #0da6a1;
+$input-bg: #f8f8f8;
+$input-disabled-bg: #f8f8f8;
+$input-placeholder: Greys Colors 05;
+$input-font: "Manrope", sans-serif;
+
+.header-account {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  .wrapper-header-account-middle {
+    background: #ed5a25;
+    height: 95px;
+
+    .header-2 {
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .body-regular-2 {
+        color: #fff;
+      }
+
+      .account-group > a {
+        align-items: center;
+      }
+    }
+
+    .search-category {
+      border: 1.051px solid #fff0ec;
+      background: #fff;
+      border-bottom-left-radius: 105.143px;
+      border-top-left-radius: 105.143px;
+      height: 42px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+
+      &:focus {
+        border-color: $input-border-focus;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(243, 107, 42, 0.1);
+      }
+
+      .btn-category {
+        padding-left: 18.29px;
+        padding-right: 12.62px;
+        span {
+          color: #afafaf;
+          font-family: "Manrope", sans-serif;
+          font-size: 1.472rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
+    .search-input {
+      width: 340px;
+      position: relative;
+
+      &::before {
+        content: "\f002";
+        display: inline;
+
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        font-size: 2rem;
+        color: #5c5c5c;
+        top: 11px;
+        right: 17px;
+      }
+      .input {
+        padding-left: 14.72px;
+        border: 1.051px solid #fff0ec;
+        background: #fff;
+        border-bottom-right-radius: 105.143px;
+        border-top-right-radius: 105.143px;
+        height: 42px;
+        color: #fff;
+        &::placeholder {
+          color: #afafaf;
+        }
+      }
+      .search-icon {
+        position: absolute;
+      }
+    }
+  }
+
+  @include mixins.screen(lg) {
+    .search-group {
+      display: none;
+    }
+  }
+}
