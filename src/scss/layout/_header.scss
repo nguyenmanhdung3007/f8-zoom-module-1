@@ -79,6 +79,7 @@ header {
       .btn-category {
         padding-left: 18.29px;
         padding-right: 12.62px;
+        cursor: pointer;
         span {
           color: #afafaf;
           font-family: "Manrope", sans-serif;
@@ -114,7 +115,6 @@ header {
         border-bottom-right-radius: 105.143px;
         border-top-right-radius: 105.143px;
         height: 42px;
-        color: #fff;
         &::placeholder {
           color: #afafaf;
         }
